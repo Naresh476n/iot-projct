@@ -225,12 +225,12 @@ function prependNotif(n){
 const logoutBtn = document.getElementById("logoutBtn");
 logoutBtn.addEventListener("click", () => {
   sessionStorage.removeItem("loggedInUser");
-  window.location.href = "login.html";
+  window.location.href = "data.html";
 });
 
 // -------------------------------
 // Redirect to login if not logged in
 // -------------------------------
 if(!sessionStorage.getItem("loggedInUser")){
-  window.location.href = "login.html";
+  window.location.href = "data.html";
 }
