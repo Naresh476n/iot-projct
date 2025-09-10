@@ -20,7 +20,7 @@ form.addEventListener("submit", function(e) {
     // Save login status in sessionStorage
     sessionStorage.setItem("loggedInUser", email);
     // Redirect to main dashboard
-    window.location.href = "data.html";
+    window.location.href = "index.html";
   } else {
     errorMsg.textContent = "Invalid email or password!";
   }
@@ -28,5 +28,5 @@ form.addEventListener("submit", function(e) {
 
 // Optional: redirect if already logged in
 if(sessionStorage.getItem("loggedInUser")){
-  window.location.href = "data.html";
+  window.location.href = "index.html";
 }
