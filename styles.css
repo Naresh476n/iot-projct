@@ -132,3 +132,16 @@ input:checked + .slider:before { transform: translateX(26px) }
   background-color: #2563eb; /* blue on hover */
 }
 
+.logout {
+  background-color: #ef4444; /* red */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout:hover {
+  background-color: #dc2626;
+}

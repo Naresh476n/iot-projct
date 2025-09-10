@@ -219,3 +219,18 @@ function prependNotif(n){
     console.warn("Init fetch failed", e);
   }
 })();
+// -------------------------------
+// Logout
+// -------------------------------
+const logoutBtn = document.getElementById("logoutBtn");
+logoutBtn.addEventListener("click", () => {
+  sessionStorage.removeItem("loggedInUser");
+  window.location.href = "login.html";
+});
+
+// -------------------------------
+// Redirect to login if not logged in
+// -------------------------------
+if(!sessionStorage.getItem("loggedInUser")){
+  window.location.href = "login.html";
+}
